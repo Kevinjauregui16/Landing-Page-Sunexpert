@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hover-underline {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .hover-underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Ajusta la distancia de la línea debajo del texto */
+    height: 2px; /* Grosor de la línea */
+    width: 0; /* Inicialmente no es visible */
+    background-color: #61a730; /* Color de la línea */
+    transition: width 0.3s ease; /* Duración y tipo de animación */
+  }
+  
+  .group:hover .hover-underline::after {
+    width: 100%; /* Ancho completo al hacer hover */
+  }
+
+  /* Hero.css */
+/* .slide-up {
+  animation: slideUp 1.2s ease-out;
+}
+.left-up {
+  animation: leftUp .8s ease-out;
+}
+.rigth-up {
+  animation: rigthUp .8s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes leftUp {
+  from {
+    opacity: 0;
+    transform: translateX(-5%); 
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes rigthUp {
+  from {
+    opacity: 0;
+    transform: translateX(5%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); 
+  }
+} */
